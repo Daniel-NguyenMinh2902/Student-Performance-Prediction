@@ -1,0 +1,11 @@
+The exploratory analysis reveals several important patterns in the dataset. The distribution of the target variable shows that approximately 33% of students are classified as academically at risk, while 67% successfully pass. This represents a moderately imbalanced dataset but remains suitable for classification modeling without heavy imbalance correction.
+
+The analysis of predictive variables highlights that academic history is the strongest indicator of student success. In particular, the second period grade (G2) shows the strongest correlation with final performance (0.90), followed by the first period grade (G1) with a correlation of 0.80. Boxplot visualizations confirm that these variables clearly separate at-risk and successful students.
+
+The number of past failures also demonstrates significant predictive value, with a negative correlation of -0.36 with the final grade. Students who have failed previous classes are substantially more likely to fail again.
+
+Socioeconomic variables such as parental education (Medu and Fedu) show moderate positive correlations with academic success, suggesting that family educational background may play a supportive role in student achievement.
+
+Behavioral factors such as absences and studytime exhibit weaker relationships with the final grade. While higher absence counts appear slightly more common among at-risk students, the large variability and presence of outliers indicate that absences alone are not a reliable predictor of failure.
+
+Overall, the exploratory analysis indicates that academic performance indicators (G1, G2) and past failures are the most informative predictors for modeling student academic risk.

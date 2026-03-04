@@ -1,0 +1,39 @@
+EDA Conclusion:
+Exploratory Data Analysis Summary
+
+The dataset contains 395 students and 33 features, including academic performance indicators, demographic variables, and behavioral attributes.
+
+Target Variable :
+A binary risk indicator was created based on the final grade:
+- Risk = 1 if G3 < 10 (student fails)
+- Risk = 0 otherwise
+
+The class distribution is:
+- Safe students: 67%
+- At-risk students: 33%
+
+The dataset therefore presents moderate class imbalance, which remains acceptable for standard classification models.
+
+Key Predictive Variables :
+Exploratory analysis revealed strong relationships between previous academic performance and final grade.
+The strongest correlations with G3 were:
+Variable	Correlation
+G2		0.90
+G1		0.80
+failures	-0.36
+These results indicate that previous academic performance is the most important predictor of final success.
+Students with higher grades in earlier periods (G1, G2) are significantly more likely to succeed.
+
+Behavioral and Socioeconomic Factors :
+Some variables showed weaker relationships with academic success:
+Variable	Correlation
+Medu		0.21
+Fedu		0.15
+studytime	0.09
+These factors may contribute marginally to predictive performance but are less influential than academic history.
+
+Weak Predictors :
+Variables such as absences and freetime showed very low correlation with final grade, suggesting limited predictive power when considered individually.
+
+Key Insight : 
+The analysis suggests that academic trajectory variables (G1 and G2) dominate the prediction of final performance, while lifestyle and social variables play a secondary role.
