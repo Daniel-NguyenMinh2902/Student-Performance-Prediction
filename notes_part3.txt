@@ -1,0 +1,4 @@
+- In the preprocessing stage, the target variable was defined as a binary academic risk indicator derived from the final grade G3. 
+- All predictor variables except G3 and the target risk were retained as input features.
+- Categorical variables were transformed using one-hot encoding to make them compatible with machine learning algorithms. 
+- The dataset was then split into training and testing subsets using stratified sampling to preserve class proportions. Finally, feature scaling was applied with StandardScaler in preparation for Logistic Regression, ensuring that numerical variables were placed on comparable scales.

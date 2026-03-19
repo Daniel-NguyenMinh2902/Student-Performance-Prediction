@@ -1,0 +1,7 @@
+Logistic Regression was used as the baseline model for the student risk prediction task. After preprocessing, including one-hot encoding of categorical variables and feature scaling using StandardScaler, the model was trained on 80% of the dataset and evaluated on the remaining 20%.
+
+The model achieved an overall accuracy of approximately 90%, indicating strong predictive performance. The confusion matrix shows that the model correctly classified 51 safe students and successfully detected 20 out of 26 at-risk students. Only two safe students were incorrectly flagged as at risk, while six at-risk students were missed.
+
+The classification report reveals a precision of 0.91 for the at-risk class, meaning that most students flagged by the model were indeed at risk. The recall for at-risk students is 0.77, indicating that the model successfully identifies about 77% of students who eventually fail.
+
+These results demonstrate that even a simple logistic regression model can effectively capture patterns in academic performance data, particularly due to the strong predictive power of features such as first and second period grades and previous failures. As a baseline model, logistic regression provides strong interpretability and reliable risk probability estimates, making it a suitable foundation for comparison with more complex models.
