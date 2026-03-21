@@ -1,0 +1,9 @@
+In this study, multiple classification models were trained and evaluated to predict student academic risk. Logistic Regression was first implemented as a baseline model, achieving an accuracy of approximately 90% and a recall of 77% for at-risk students.
+
+To extend the analysis, Decision Tree, Random Forest, and K-Nearest Neighbors models were also trained and evaluated using the same dataset and metrics. Among these models, Random Forest achieved the best overall performance, with an accuracy of approximately 91% and a recall of 88% for at-risk students. This indicates that the model successfully identifies the majority of students at risk while maintaining strong overall predictive performance.
+
+Decision Tree provided slightly lower accuracy but demonstrated reasonable recall, while K-Nearest Neighbors performed the worst, particularly in detecting at-risk students, with a recall of only 54%.
+
+These results highlight the importance of model selection in classification tasks. While simpler models such as Logistic Regression offer interpretability and solid baseline performance, ensemble methods such as Random Forest can significantly improve predictive accuracy and robustness.
+
+Based on these results, Random Forest is selected as the final model for student risk prediction.
