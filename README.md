@@ -11,15 +11,13 @@ Objectives
 
 Project Structure
 Student-Performance-Prediction/
-│
-├── data-student/        # Raw and processed datasets
-├── notebooks/           # Jupyter notebooks (EDA, experiments)
-├── src/                 # Source code (models, preprocessing)
-├── reports/             # Results, figures, reports
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+- data-student/        # Raw and processed datasets
+- notebooks/           # Jupyter notebooks (EDA, experiments)
+- src/                 # Source code (models, preprocessing)
+- reports/             # Results, figures, reports
+
+- README.md
+- .gitignore
 
 Dataset
 - Source: Student Performance - UCI Machine Learning Repository 
