@@ -1,0 +1,9 @@
+The analysis of feature importance reveals that academic performance indicators, particularly second period grade (G2) and first period grade (G1), are by far the most influential predictors of student success. These variables dominate all others, highlighting the importance of academic trajectory in determining final outcomes.
+
+Behavioral factors such as absences, social activity (goout), and daily alcohol consumption also contribute to prediction, though to a lesser extent. These findings suggest that student engagement and lifestyle may influence performance but are secondary compared to academic indicators.
+
+Socioeconomic and family-related variables, such as parental education and family relationships, show moderate importance, indicating that family context may support academic success but is not the primary driver.
+
+Logistic Regression coefficients further confirm these findings, showing that higher values of G1 and G2 strongly reduce failure risk, while variables such as absences, age, and social activity increase it.
+
+Overall, the results suggest that early academic performance is the most reliable signal for identifying at-risk students, while behavioral and social factors provide additional but weaker explanatory power.
