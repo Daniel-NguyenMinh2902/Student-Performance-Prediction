@@ -13,8 +13,8 @@ Project Structure
 Student-Performance-Prediction/
 - data-student/        # Raw and processed datasets
 - notebooks/           # Jupyter notebooks (EDA, experiments)
-- src/                 # Source code (models, preprocessing)
-- reports/             # Results, figures, reports
+- src/                 # Figures, outputs (models, preprocessing)
+- reports/             # Results, reports, notes
 
 - README.md
 - .gitignore
