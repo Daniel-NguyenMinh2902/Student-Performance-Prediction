@@ -19,6 +19,7 @@ Student-Performance-Prediction/
 - README.md
 - .gitignore
 
+
 Dataset
 - Source: Student Performance - UCI Machine Learning Repository 
 - Description:
@@ -57,7 +58,8 @@ Data exploration : Done
 Feature engineering : Done
 Model training : Done
 Evaluation & comparison : Done
-Interpretation : In progress
+Interpretation : Done
+Presentation : In progress
 
 Future Improvements
 - Hyperparameter tuning
