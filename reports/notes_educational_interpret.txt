@@ -1,3 +1,24 @@
+By extracting feature importance, 
+feature_importance_rf = pd.Series(ran_for.feature_importances_, index=X_train.columns).sort_values(ascending=False)
+feature_importance_rf.head(10) # 10 most important features
+G2          0.307881
+G1          0.209980
+absences    0.035624
+failures    0.029135
+goout       0.023811
+Fedu        0.022199
+age         0.020906
+famrel      0.017700
+health      0.016931
+Walc        0.014927
+dtype: float64
+
+Observation: 
+G2          0.30
+G1          0.21
+Others:     0.02 - 0.03 
+The large gap between G2/G1 and other variables indicates that academic trajectory dominates the prediction, while other factors play a second role. 
+
 The analysis of feature importance reveals that academic performance indicators, particularly second period grade (G2) and first period grade (G1), are by far the most influential predictors of student success. These variables dominate all others, highlighting the importance of academic trajectory in determining final outcomes.
 
 Behavioral factors such as absences, social activity (goout), and daily alcohol consumption also contribute to prediction, though to a lesser extent. These findings suggest that student engagement and lifestyle may influence performance but are secondary compared to academic indicators.
@@ -5,5 +26,36 @@ Behavioral factors such as absences, social activity (goout), and daily alcohol 
 Socioeconomic and family-related variables, such as parental education and family relationships, show moderate importance, indicating that family context may support academic success but is not the primary driver.
 
 Logistic Regression coefficients further confirm these findings, showing that higher values of G1 and G2 strongly reduce failure risk, while variables such as absences, age, and social activity increase it.
+print("Most negative coefficients (protective factors) : ")
+print(coef_lr.head(10))
+# higher, much safer (reduce risk)
+Most negative coefficients (protective factors) : 
+G2                -4.214133
+G1                -1.907213
+famrel            -0.775536
+Walc              -0.523586
+Fjob_other        -0.444825
+traveltime        -0.282417
+sex_F             -0.188339
+activities_no     -0.185088
+freetime          -0.173221
+guardian_father   -0.168368
+dtype: float64
+
+print("Most positive coefficients (risk factors) : ")
+print(coef_lr.tail(10))
+# higher, more risk (increase risk)
+Most positive coefficients (risk factors) : 
+reason_course     0.193099
+studytime         0.199800
+Mjob_other        0.261181
+absences          0.296229
+guardian_other    0.299814
+Dalc              0.302601
+goout             0.321095
+Fjob_health       0.343996
+Fjob_services     0.384184
+age               0.678533
+dtype: float64
 
 Overall, the results suggest that early academic performance is the most reliable signal for identifying at-risk students, while behavioral and social factors provide additional but weaker explanatory power.
