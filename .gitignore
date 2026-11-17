@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Bao mat & Thong tin nhay cam ---
+.env
+.env.*
+*.pem
+*.key
+*.pub
+*id_rsa*
+*id_ed25519*
+secrets.json
+credentials.json
+
+# --- Rac he thong macOS ---
+.DS_Store
+
+# --- Moi truong Python & Jupyter Notebook ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
